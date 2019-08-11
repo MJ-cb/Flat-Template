@@ -9,9 +9,15 @@ gulp.task('default', function(done){
 gulp.task('html', function(done){
     console.log("\n some useful task \n ");
     done();
-})
-gulp.task('watch', function(){
-    watch('./app/index.html', function(){
-        gulp.start('html');
-    });
+});
+gulp.task('styles', function(done){
+    console.log(" \n styles \n ")
+    done();
+});
+
+gulp.task('watch', function(done){
+    watch('./app/*.html', gulp.series('html'));
+    watch('./app/assets/styles/**/*.css', gulp.series('styles'));
+    done();
+
 });
