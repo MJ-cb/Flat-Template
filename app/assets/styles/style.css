@@ -1,10 +1,8 @@
-$mainColor: skyblue;
+@import "normalize.css";
+@import "base/_global";
+@import "base/_variables.css";
+@import "modules/_large-hero";
+@import "modules/_btn.css";
 
-body{ 
-    background-color: $mainColor;
-    a{ 
-    color: red; 
-    margin:1em; column-count: none; display: block;}
-    
-}
- 
+
+
