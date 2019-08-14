@@ -642,19 +642,45 @@ a{
 
 .featured-item{
     position:relative;
-    padding-left: 5.876em;
+    
     padding-bottom: 2.5rem;
 }
 
+@media(min-width: 530px){
+
+.featured-item{
+        padding-left: 5.876em
+}
+    }
+
 .featured-item-icon{
-        position:absolute;
-        left:0;
+        display: block;
+        margin: 0 auto;
+    }
+
+@media(min-width: 530px){
+
+.featured-item-icon{
+            position:absolute;
+            left:0
+    }
     }
 
 .featured-item__title{
-        font-size: 1.875rem;
+        font-size: 1.6rem;
         font-weight: 300;
+        margin-top:0.7em;
         margin-bottom: 0.8rem;
+        text-align: center;
+    }
+
+@media(min-width: 530px){
+
+.featured-item__title{
+            font-size: 1.875rem;
+            margin-top:1em;
+            text-align: left
+    }
     }
 
 
