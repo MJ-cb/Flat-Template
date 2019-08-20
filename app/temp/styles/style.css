@@ -384,7 +384,18 @@ a{
         width:100%;
         text-align: center;
         transform: translateY(-50%);
+        padding-top: 5.5em;
         
+        
+    }
+
+@media (min-width: 800px){
+
+.large-hero__text-content{
+            padding-top: 3.75em
+        
+        
+    }
     }
 
 .large-hero__title{
@@ -977,6 +988,109 @@ a{
             margin-right:1.4rem
     }
     }
+
+.site-header{
+    padding:0.6em 0;
+    position:absolute;
+    z-index:2;
+    width:100%;
+
+   
+}
+
+@media (min-width: 800px){
+
+.site-header{
+       background-color: rgba(47,85,114, 0.3)
+
+   
+}
+    }
+
+.site-header__btn-container{
+        float:right;
+    }
+
+.site-header__logo{
+        position:absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        transform-origin:50% 0;
+        background-color: #2f5572;
+        padding: 1.5625em  2.25em;
+    }
+
+@media (min-width: 800px){
+
+.site-header__logo{
+            left: auto;
+            transform: translateX(0) scale(1)
+    }
+    }
+
+.site-header__logo__graphic{
+        text-indent:-9999px;
+    }
+
+.site-header__menu-icon{
+        position: absolute;
+        width: 2.25em;
+        height:2.25em; 
+        background-color: #fff;
+        top: 0.625em;
+        right:  0.625em;
+           
+    }
+
+@media (min-width: 800px){
+
+.site-header__menu-icon{
+           /* display: none;*/
+           
+    }
+    }
+
+.site-header__menu-content{
+        display:none;
+    }
+
+@media (min-width: 800px){
+
+.site-header__menu-content{
+            display:block
+    }
+    }
+
+.primary-nav--pull-right{
+        float:right;
+    }
+
+.primary-nav--pull-right ul {
+            margin:0;
+            padding:0;
+        }
+
+.primary-nav--pull-right ul::after{
+        content:"";
+        clear:both;
+        display:table;
+    }
+
+.primary-nav--pull-right li{
+            list-style:none;
+            float:left;
+            padding-right:1.25em;
+        }
+
+.primary-nav--pull-right a{
+            display: block;
+            color:#fff;
+            text-decoration:none;
+            font-weight:350;
+            padding: 0.75em 0;
+
+        }
 
 
 

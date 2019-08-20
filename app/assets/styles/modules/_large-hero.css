@@ -12,6 +12,11 @@
         width:100%;
         text-align: center;
         transform: translateY(-50%);
+        padding-top: 5.5em;
+        @mixin atMedium{
+            padding-top: 3.75em;
+        }
+        
         
     }
     &__title{
