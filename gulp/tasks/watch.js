@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const watch = require('gulp-watch');
 const browsrSync = require('browser-sync').create();
-
+const webpack = require('webpack');
 
 gulp.task('html', function(done){
     browsrSync.reload();
@@ -22,6 +22,20 @@ gulp.task('watch', function(){
             baseDir:"app"
         }
     });
+
+    gulp.task('scripts', function(done){
+        webpack(require('../../webpack.config.js'), function(err, stats){
+            if(err){
+                console.log("\n" + err.toString()+ "\n");
+            }
+            console.log("\n" + stats.toString() + "\n");
+            done();
+
+        });
+        
+    });
+
     watch('./app/*.html', gulp.series('html'));
     watch('./app/assets/styles/**/*.css', gulp.series('styles','cssInject'));
+    watch('./app/assets/scripts/**/*.js', gulp.series('scripts','html'));
 });

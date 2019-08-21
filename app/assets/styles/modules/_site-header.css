@@ -39,7 +39,7 @@
         top: 0.625em;
         right:  0.625em;
         @mixin atMedium{
-           /* display: none;*/
+           display: none;
         }
            
     }
