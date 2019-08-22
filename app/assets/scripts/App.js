@@ -1,8 +1,6 @@
-var $ = require('Jquery');
-const Person = require('./modules/Person');
 
-let John = new Person("John", "blue");
-let jane = new Person("Jane", "pink");
-alert("test 123");
-John.greet();
-jane.greet();
+import MobileMenu from './modules/MobileMenu';
+
+// No imports or requirements Below this line 
+
+let mobileMenu = new MobileMenu();
