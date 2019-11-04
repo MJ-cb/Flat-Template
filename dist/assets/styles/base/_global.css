@@ -1,0 +1,21 @@
+$mainColor: lightgray;
+$fontColor: #333;
+$fontFamily: "roboto", sans-serif;
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $mainColor;
+    font-family: $fontFamily;
+    color: $fontColor;
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  a{
+      color: $mainOrange;
+  }
