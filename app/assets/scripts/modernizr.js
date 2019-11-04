@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.8.0
- * Build https://modernizr.com/download?-flexbox-supports-svg-setclasses-dontmin
+ * Build https://modernizr.com/download?-cssanimations-flexbox-supports-svg-setclasses-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -808,6 +808,26 @@ Detects support for SVG in `<embed>` or `<object>` elements.
   ModernizrProto.testAllProps = testAllProps;
 
   
+/*!
+{
+  "name": "CSS Animations",
+  "property": "cssanimations",
+  "caniuse": "css-animation",
+  "polyfills": ["transformie", "csssandpaper"],
+  "tags": ["css"],
+  "warnings": ["Android < 4 will pass this test, but can only animate a single property at a time"],
+  "notes": [{
+    "name": "Article: 'Dispelling the Android CSS animation myths'",
+    "href": "https://web.archive.org/web/20180602074607/https://daneden.me/2011/12/14/putting-up-with-androids-bullshit/"
+  }]
+}
+!*/
+/* DOC
+Detects whether or not elements can be animated using CSS
+*/
+
+  Modernizr.addTest('cssanimations', testAllProps('animationName', 'a', true));
+
 /*!
 {
   "name": "Flexbox",

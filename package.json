@@ -6,7 +6,7 @@
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^5.1.1",
     "normalize.css": "8.0.1",
-    "picturefill": "3.0.3",
+    "picturefill": "^3.0.3",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
     "gulp": "^4.0.2",
     "gulp-cssnano": "2.1.3",
     "gulp-imagemin": "6.0.0",
-    "gulp-modernizr": "3.3.0",
+    "gulp-modernizr": "^3.3.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "1.4.0",
     "gulp-rev": "9.0.0",
