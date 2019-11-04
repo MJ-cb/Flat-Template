@@ -23,7 +23,7 @@ gulp.task('watch', function(){
         }
     });
 
-    gulp.task('scripts', function(done){
+    gulp.task('scripts', gulp.series('modernizr'),function(done){
         webpack(require('../../webpack.config.js'), function(err, stats){
             if(err){
                 console.log("\n" + err.toString()+ "\n");
